@@ -29,33 +29,65 @@
         <h2 class="visually-hidden">Список отелей</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
-            <!-- figure.hotels-photo с картринкой и она не ссылка-->
-           <!-- img -->
-            <!-- /figure-->
-            <!-- div.hotels-info -->
-              <h3>
-                <a href="catalog-hotel-amara.html">amara resort & spa</a>
-              </h3>
-              <!-- тут идет 2 колонки, в первой гостинца и 1 кнопка, во второй цена и 2ая кнопка, но мы им даем общего родителя для дальнейшей ситилиации подсеток-->
-              <!-- div.hotels-info-column -->
-                 <span class="hotels-text-type">гостиница</span> 
-                <a class="hotels-button">Забронировать</a>
-              <!-- /div. --> 
-              <!-- тут вторая колонка по аналогии -->
-            <!-- закрываем div hotels-info -->
-            <!-- div.hotels-rating -->
-              <!-- тут должен быть списол , где каждая li - 1 звезда -->
-              <!-- span с суммарным рейтингом -->
-            <!-- /div -->
-          </li>  
-          <!-- остальные Li -->
-        </ul>
+        <div class="hotels-info">
+        <figure>
+          <img src="hotel-photo1.jpg" alt="">
+        </figure>
+          <h2>
+            <a href="catalog-hotel-amara.html">amara resort & spa</a>
+          </h2>
+          <div class="column column-1">
+            <span class="hotels-text-type">Гостиница</span>
+            <a class="hotels-button">Подробнее</a>
+          </div>
+          <div class="column column-2">
+            <span class="hotels-text-type">от 4000 Р</span>
+            <a class="hotels-button">Забронировать</a>
+          </div>
+          <figure>
+            <img src="hotel-photo2.jpg" alt="">
+          </figure>
+          <h2>
+            <a href="catalog-hotel-amara.html">desert quail inn</a>
+          </h2>
+          <div class="column column-1">
+            <span class="hotels-text-type">Мотель</span>
+            <a class="hotels-button">Подробнее</a>
+          </div>
+          <div class="column column-2">
+            <span class="hotels-text-type">от 3000 Р</span>
+            <a class="hotels-button">Забронировать</a>
+          </div>
+          <figure>
+            <img src="hotel-photo3.jpg" alt="">
+          </figure>
+          <h2>
+            <a href="catalog-hotel-amara.html">villas at poco diablo</a>
+          </h2>
+          <div class="column column-1">
+            <span class="hotels-text-type">Апартаменты</span>
+            <a class="hotels-button">Подробнее</a>
+          </div>
+          <div class="column column-2">
+            <span class="hotels-text-type">от 2000 Р</span>
+            <a class="hotels-button">Забронировать</a>
+          </div>
+        </div>
+        <div class="hotels-rating">
+          <ul>
+            <li><a href="#" title="1 star">1</a></li><span></span>
+            <li><a href="#" title="2 stars">2</a></li><span></span>
+            <li><a href="#" title="3 stars">3</a></li><span></span>
+            <li><a href="#" title="4 stars">4</a></li><span></span>
+          </ul>
+        </div>
+              <!-- span с суммарным рейтингом не знаю как сделать -->
       </section>
     </main>
 
     <footer class="main-footer">
       <p class="footer-contacts">
-        <a href="https://www.instagram.com/explore/tags/visitsedona/">#visitsedona</a>
+        <b>#visitsedona</b>
       </p>
       <div class="footer-social">
         <ul>
