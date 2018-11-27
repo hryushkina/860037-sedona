@@ -8,13 +8,13 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
-          <img src="img/logo-sedona.svg" width="140" height="72" alt="">
+          <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип города Седона">
         </a>
         <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
           <li><a href="photo.html">Фото и Видео</a></li>
           <li><a href="map.html">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
+          <li class="site-navigation-current"><a href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -38,6 +38,7 @@
                 <div class="column column-1">
                   <span class="hotels-text-type">Гостиница</span>
                   <a class="hotels-button">Подробнее</a>
+                  <!-- тут нужна кнопка на "подробнее" как button, а не как а с классом? -->
                 </div>
                 <div class="column column-2">
                   <span class="hotels-text-type">от 4000 Р</span>
@@ -134,20 +135,21 @@
       </p>
       <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="#"></a>
+          <li><a class="social-button" href="#" aria-label="Седона в Twitter"></a>
             <button><img src="img/twitter.svg" alt=""></button>
+            <!-- тут нужно использовать и a и btn?? -->
           </li>
-          <li><a class="social-button" href="#"></a>
+          <li><a class="social-button" href="#" aria-label="Седона в Facebook"></a>
             <button><img src="img/fb-icon.svg" alt=""></button>
           </li>
-          <li><a class="social-button" href="#"></a>
+          <li><a class="social-button" href="#" aria-label="Седона в Youtube"></a>
             <button><img src="img/youtube.svg" alt=""></button>
           </li>
         </ul>
       </div>
       <p class="footer-copyright">
         <b>Website by:</b> <a class="button" href="https://htmlacademy.ru"></a>
-          <button><img src="img/logo-htmlacademy.svg" alt=""></button>
+          <button><img src="img/logo-htmlacademy.svg" alt="">HTML Academy</button>
       </p>
     </footer>
   </body>
