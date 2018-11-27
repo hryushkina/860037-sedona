@@ -48,15 +48,33 @@
       <section class="hotel-search">
         <b>Заинтересовались?</b>
         <h3>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</h3>
-        <!-- окошко поиск гостиниц -->
-        <!-- и где оно ?  -->
+        <div class="popup-title">Поиск гостиницы в Седоне</div>
+        <div class="popup-body">
+        <!-- форма тут нужна? -->
+          <form class="search-form">
+            <p class="search-item">
+              <label for="arrival-date">Дата заезда</label>
+              <input id="arrival-date" type="text" name="date" value="" placeholder="24 апреля 2017">
+            </p>
+            <p class="search-item">
+              <label for="departure-date">Дата выезда</label>
+              <input id="departure-date" type="text" name="date" value="" placeholder="4 июля 2017">
+            </p>
+            <p class="search-item">
+              <label for="guests-adults">Взрослые</label>
+              <input id="guests-adults" type="number" name="people" value="" min="1" value="2">
+            </p>
+            <p class="search-item">
+              <label for="guests-kids">Дети</label>
+              <input id="guests-kids" type="number" name="people" value="" min="0" value="0">
+            </p>
+            <button class="button" type="submit">Найти</button>
+          </form>
+        </div>
       </section>
-      
+
       <section class="map">
-        <!-- не надо не p, не img Внутри -->
-        <p>
-          <img src="map.jpg" width="" height="" alt="Седона на карте">
-        </p>
+      </section>
     </main>
 
     <footer class="main-footer">
@@ -65,22 +83,20 @@
       </p>
       <div class="footer-social">
         <ul>
-          <!-- как в каталоге -->
-          <li><a class="social-button" href="#" aria-label="Седона в Twitter"></a>
-            <button><img src="img/twitter.svg" alt=""></button>
+          <li><a class="social-button" href="#" aria-label="Седона в Twitter">
+            <img src="img/twitter.svg" alt=""></a>
           </li>
-          <li><a class="social-button" href="#" aria-label="Седона в Facebook"></a>
-            <button><img src="img/fb-icon.svg" alt=""></button>
+          <li><a class="social-button" href="#" aria-label="Седона в Facebook">
+            <img src="img/fb-icon.svg" alt=""></a>
           </li>
-          <li><a class="social-button" href="#" aria-label="Седона в Youtube"></a>
-            <button><img src="img/youtube.svg" alt=""></button>
+          <li><a class="social-button" href="#" aria-label="Седона в Youtube">
+            <img src="img/youtube.svg" alt=""></a>
           </li>
         </ul>
       </div>
       <p class="footer-copyright">
-        <b>Website by:</b> <a class="button" href="https://htmlacademy.ru"></a>
-        <!-- зачем тут еще кнопка??? -->
-          <button><img src="img/logo-htmlacademy.svg" alt="">HTML Academy</button>
+        <b>Website by:</b> <a class="button" href="https://htmlacademy.ru">
+          <img src="img/logo-htmlacademy.svg" alt="">HTML Academy</a>
       </p>
     </footer>
   </body>
