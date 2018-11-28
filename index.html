@@ -62,13 +62,15 @@
             </p>
             <p class="search-item">
               <label for="guests-adults">Взрослые</label>
-              <!-- Где кнопки ? -->
-              <input id="guests-adults" type="number" name="people" value="" min="1" value="2">
+              <button type="button" data-spin="down">-</button>
+              <input id="calc" type="number" name="people" min="1" value="2">
+              <button type="button" data-spin="up">+</button>
             </p>
             <p class="search-item">
               <label for="guests-kids">Дети</label>
-              <!-- Где кнопки ? -->
-              <input id="guests-kids" type="number" name="people" value="" min="0" value="0">
+              <button type="button" data-spin="down">-</button>
+              <input id="guests-kids" type="number" name="people" min="0" value="0">
+              <button type="button" data-spin="up">+</button>
             </p>
             <button class="button" type="submit">Найти</button>
           </form>
@@ -85,14 +87,14 @@
       </p>
       <div class="footer-social">
         <ul>
-          <!-- Что с форматированием -->
-          <li><a class="social-button" href="#" aria-label="Седона в Twitter">
+          <!-- Что с форматированием === а что тут надо изменить? у меня нет идей совсем кроме всё на одном языке -->
+          <li><a class="social-button" href="#" aria-label="Седона в Твиттер">
             <img src="img/twitter.svg" alt=""></a>
           </li>
-          <li><a class="social-button" href="#" aria-label="Седона в Facebook">
+          <li><a class="social-button" href="#" aria-label="Седона в Фейсбук">
             <img src="img/fb-icon.svg" alt=""></a>
           </li>
-          <li><a class="social-button" href="#" aria-label="Седона в Youtube">
+          <li><a class="social-button" href="#" aria-label="Седона в Ютьюб">
             <img src="img/youtube.svg" alt=""></a>
           </li>
         </ul>
