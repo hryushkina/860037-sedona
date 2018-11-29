@@ -48,19 +48,22 @@
       <section class="hotel-search">
         <b>Заинтересовались?</b>
         <h3>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</h3>
-        <!-- поиск гостиницы в седоне - это ссылка -->
-        <div class="popup-title">Поиск гостиницы в Седоне</div>
+        <a class="popup-trigger" href="#">Поиск гостиницы в Седоне</a>
         <div class="popup-body">
           <form class="search-form">
             <p class="search-item">
               <label for="arrival-date">Дата заезда</label>
-              <input id="arrival-date" type="text" name="date" value="" placeholder="24 апреля 2017">
-              <!-- календарь забыла. сделай его ссылкой -->
+              <input id="arrival-date" type="date" name="date" value="" placeholder="24 апреля 2017">
+                <a class="calendar" href="#">
+                  <img src="img/calendar.svg" alt="">
+                </a>
             </p>
             <p class="search-item">
               <label for="departure-date">Дата выезда</label>
-              <input id="departure-date" type="text" name="date" value="" placeholder="4 июля 2017">
-              <!-- календарь забыла. сделай его ссылкой -->
+              <input id="departure-date" type="date" name="date" value="" placeholder="4 июля 2017">
+                <a class="calendar" href="#">
+                  <img src="img/calendar.svg" alt="">
+                </a>
             </p>
             <p class="search-item">
               <label for="guests-adults">Взрослые</label>
@@ -89,16 +92,20 @@
       </p>
       <div class="footer-social">
         <ul>
-          <!-- Что с форматированием === а что тут надо изменить? у меня нет идей совсем кроме всё на одном языке -->
-          <!-- ССЫЛКИ ! вложи нормально в li -->
-          <li><a class="social-button" href="#" aria-label="Седона в Твиттер">
-            <img src="img/twitter.svg" alt=""></a>
+          <li>
+            <a class="social-button" href="#" aria-label="Седона в Твиттер">
+              <img src="img/twitter.svg" alt="">
+            </a>
           </li>
-          <li><a class="social-button" href="#" aria-label="Седона в Фейсбук">
-            <img src="img/fb-icon.svg" alt=""></a>
+          <li>
+            <a class="social-button" href="#" aria-label="Седона в Фейсбук">
+              <img src="img/fb-icon.svg" alt="">
+            </a>
           </li>
-          <li><a class="social-button" href="#" aria-label="Седона в Ютьюб">
-            <img src="img/youtube.svg" alt=""></a>
+          <li>
+            <a class="social-button" href="#" aria-label="Седона в Ютьюб">
+              <img src="img/youtube.svg" alt="">
+            </a>
           </li>
         </ul>
       </div>
