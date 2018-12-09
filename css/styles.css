@@ -229,3 +229,127 @@ a {
 .footer-copyright a:focus {
   background-color: #81b3d2;
 }
+
+/* ------ Сеточные стили ------*/
+
+html,
+body {
+  min-width: 1280px;
+  min-height: 2762px;
+}
+
+/* ----- у меня не получается шапку сделать красиво и правильно :( -----*/
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.main-header {
+  margin-bottom: 22px;
+}
+
+.main-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-navigation-wrapper {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.main-navigation-wrapper .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-header-logo {
+  order: 2;
+  width: 140px;
+  height: 72px;
+}
+
+.site-navigation {
+  width: 1200px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.background{
+width: 1200px;
+margin-bottom: 65px;
+align-items: center;
+}
+
+.features h2 {
+  width: auto;
+  margin-left: 282px;
+  margin-right: 282px;
+  margin-bottom: 30px;
+  padding: 0;
+  align-items: center;
+}
+
+.features h3 {
+  width: auto;
+  margin-left: 354px;
+  margin-right: 354px;
+  margin-bottom: 56px;
+  padding: 0;
+  align-items: center;
+}
+
+.advantages {
+  width: auto;
+  margin-bottom: 58px;
+  padding: 0;
+  align-items: center;
+}
+
+.hotel-search {
+  width: auto;
+  margin-left: 282px;
+  margin-right: 282px;
+  padding: 0;
+  align-items: center;
+}
+
+.hotel-search b {
+  text-align: center;
+}
+
+.popup-trigger {
+  width: auto;
+  margin-left: 455px;
+  margin-right: 455px;
+  margin-bottom: 33px;
+  padding: 0;
+  align-items: center;
+}
+
+/* --- и с формой какой-то бред получается. не пойму откуда и до куда мерять расстояния ---*/
+
+.main-footer .container {
+  display: flex;
+}
+
+.footer-contacts {
+ width: 240px;
+ margin-left: 73px;
+ margin-right: 88px;
+}
+
+.footer-social {
+  width: 400px;
+}
+
+.footer-copyright {
+  width: 240px;
+  margin-left: 88px;
+  margin-right: 73px;
+}
