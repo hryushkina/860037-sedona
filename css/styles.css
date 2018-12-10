@@ -231,16 +231,14 @@ a {
 }
 
 /* ------ Сеточные стили ------*/
-
+/*+++++++ Это лишнее, убери, хоть в лекции и показывали так+++++++ */
 html,
 body {
   min-width: 1280px;
   min-height: 2762px;
 }
 
-/* ----- у меня не получается шапку сделать красиво и правильно :( -----*/
-
-.container {
+./*+++++++ наш новый центровщик. PS - у него будет тень слева справа +++++++ */ {
   width: 1200px;
   margin: 0 auto;
   padding: 0 40px;
@@ -250,29 +248,14 @@ body {
   margin-bottom: 22px;
 }
 
-.main-navigation {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.main-navigation-wrapper {
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-.main-navigation-wrapper .container {
-  display: flex;
-  justify-content: space-between;
-}
-
 .main-header-logo {
-  order: 2;
   width: 140px;
   height: 72px;
 }
 
 .site-navigation {
+  /* {flex, его дети распологаются слева направо, 3ий отталкивается от 2ого маргин лефт ауто}  */
+  /* flex и так занимается 100% родителя, родитель тянется на весь центровщик, т.е. дублировать ширину незачем */
   width: 1200px;
   margin: 0;
   padding: 0;
@@ -280,6 +263,7 @@ body {
   list-style: none;
 }
 
+/* форматирование! ширина не нужна, элайн айтемс просто так не сработает без свойства дисплей:флекс*/
 .background{
 width: 1200px;
 margin-bottom: 65px;
