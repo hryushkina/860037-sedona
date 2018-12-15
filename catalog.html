@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
+        <a class="main-header-logo">
           <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип города Седона">
         </a>
         <ul class="site-navigation">
-          <li><a href="info.html">Информация</a></li>
-          <li><a href="photo.html">Фото и Видео</a></li>
-          <li><a href="map.html">Карта штата</a></li>
-          <li class="site-navigation-current"><a href="catalog.html">Гостиницы</a></li>
+          <li class="site-navigation-item"><a href="info.html">Информация</a></li>
+          <li class="site-navigation-item"><a href="photo.html">Фото и Видео</a></li>
+          <li class="site-navigation-item"><a href="map.html">Карта штата</a></li>
+          <li class="site-navigation-current site-navigation-item"><a href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -25,10 +28,86 @@
     <main class="container">
       <section class="filters">
         <h2 class="visually-hidden">Фильтр отелей</h2>
-        <!-- Здесь что-то будет -->
-        <!-- как сделать Фоновое фото другое (размытое и меньшей высоты), тянется на всю ширину контейнера??? -->
+        <div class="background-catalog"></div>
+        <form class="hotel-chooser">
+          <div class="form-column1">
+            <h3 class="form-column-text">Инфраструктура</h3>
+            <p class="checkbox">
+              <input type="checkbox" id="pool" name="infrastructure" value="pool" checked>
+              <label for="pool">Бассейн</label>
+            </p>
+            <p class="checkbox">
+              <input type="checkbox" id="parking" name="infrastructure" value="parking">
+              <label for="parking">Парковка</label>
+            </p>
+            <p class="checkbox">
+              <input type="checkbox" id="wifi" name="infrastructure" value="wifi">
+              <label for="wifi">WI-FI</label>
+            </p>
+          </div>
+          <div class="form-column2">
+            <h3 class="form-column-text">Тип Жилья</h3>
+            <p class="checkbox">
+              <input type="checkbox" id="hotel" name="hotel-type" value="hotel" checked>
+              <label for="hotel">Гостиница</label>
+            </p>
+            <p class="checkbox">
+              <input type="checkbox" id="motel" name="hotel-type" value="motel" checked>
+              <label for="motel">Мотель</label>
+            </p>
+            <p class="checkbox">
+              <input type="checkbox" id="apartment" name="hotel-type" value="apartment" checked>
+              <label for="apartment">Апартаменты</label>
+            </p>
+          </div>
+          <div class="form-column3">
+            <h3 class="form-column-text">Стоимость в сутки (Р)</h3>
+            <div class="price">
+              <p>
+                <label for="min-price">От</label>
+                <input type="number" id="min-price" name="min-price" value="0" min="0" max="4000">
+              </p>
+              <p>
+                <label for="max-price">До</label>
+                <input type="number" id="max-price" name="max-price" value="3000" min="0" max="4000">
+              </p>
+            </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
+            <button class="btn-transparent" type="submit">Показать</button>
+          </div>
+        </form>
       </section>
       <section class="catalog">
+        <header class="search-header">
+          <h1>Найдено:3</h1>
+          <div class="sorting">
+            <p class="sorting-title">Сортировка:</p>
+            <ul class="sorting-list">
+              <li class="sorting-item">
+                <a href="#" class="sorting-item sorting-item-current">По цене</a>
+              </li>
+              <li class="sorting-item">
+                <a href="#" class="sorting-item">По типу</a>
+              </li>
+              <li class="sorting-item">
+                <a href="#" class="sorting-item">По рейтингу</a>
+              </li>
+          </div>
+          <div class="sorting-arrow">
+            <a href="#" class="sorting-arrow-up">
+              <svg class="arrow-up" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
+            </a>
+            <a href="#" class="sorting-arrow-down sorting-arrow-current">
+              <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
+            </a>
+          </div>
+        </header>
         <h2 class="visually-hidden">Список отелей</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
@@ -49,7 +128,7 @@
               </div>
             </div>
             <div class="rating">
-              <ul>
+              <ul class="star-list">
                 <li class="star">
                   <img src="img/star.svg" alt="">
                 </li>
@@ -84,7 +163,7 @@
               </div>
             </div>
             <div class="rating">
-              <ul>
+              <ul class="star-list">
                 <li class="star">
                   <img src="img/star.svg" alt="">
                 </li>
@@ -116,7 +195,7 @@
               </div>
             </div>
             <div class="rating">
-              <ul>
+              <ul class="star-list">
                 <li class="star">
                   <img src="img/star.svg" alt="">
                 </li>
@@ -132,26 +211,32 @@
     </main>
 
     <footer class="main-footer">
-      <p class="footer-contacts">
+      <p class="search-tag">
         <b>#visitsedona</b>
       </p>
-      <div class="footer-social">
-        <ul>
-          <li><a class="social-button" href="#" aria-label="Седона в Twitter">
-            <img src="img/twitter.svg" alt=""></a>
-          </li>
-          <li><a class="social-button" href="#" aria-label="Седона в Facebook">
-            <img src="img/fb-icon.svg" alt=""></a>
-          </li>
-          <li><a class="social-button" href="#" aria-label="Седона в Youtube">
-            <img src="img/youtube.svg" alt=""></a>
-          </li>
-        </ul>
-      </div>
+      <ul class="footer-social">
+        <li>
+          <a class="social-button" href="#" aria-label="Седона в Твиттер">
+            <img src="img/twitter.svg" alt="">
+          </a>
+        </li>
+        <li>
+          <a class="social-button" href="#" aria-label="Седона в Фейсбук">
+            <img src="img/fb-icon.svg" alt="">
+          </a>
+        </li>
+        <li>
+          <a class="social-button" href="#" aria-label="Седона в Ютьюб">
+            <img src="img/youtube.svg" alt="">
+          </a>
+        </li>
+      </ul>
       <p class="footer-copyright">
         <b>Website by:</b> <a class="button" href="https://htmlacademy.ru">
-          <img src="img/logo-htmlacademy.svg" alt="">HTML Academy</a>
+          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy"></a>
       </p>
     </footer>
-  </body>
+    <div>
+</body>
+
 </html>

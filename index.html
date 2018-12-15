@@ -1,83 +1,125 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-  </head>
-  <body>
-    <!-- div.нашОбщийЦентровщик -->
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo">
           <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип города Седона">
         </a>
         <ul class="site-navigation">
-          <li><a href="info.html">Информация</a></li>
-          <li><a href="photo.html">Фото и Видео</a></li>
-          <li><a href="map.html">Карта штата</a></li>
-          <li><a href="catalog.html">Гостиницы</a></li>
+          <li class="site-navigation-item"><a href="info.html">Информация</a></li>
+          <li class="site-navigation-item"><a href="photo.html">Фото и Видео</a></li>
+          <li class="site-navigation-item"><a href="map.html">Карта штата</a></li>
+          <li class="site-navigation-item"><a href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
 
     <main class="container">
       <section class="background">
-        <img src="img/background.jpg" width="1200" height="800" alt="welcome">
+        <img src="img/intro-welcome.svg" width="459" height="353" alt="welcome to the gorgeous sedona">
       </section>
       <section class="features">
-        <h2 class="page-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-        <h3 class="page-title">Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон</h3>
+        <p class="title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+        <p class="subtitle">Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон</p>
       </section>
       <section class="advantages">
         <ul class="advantages-list">
-          <li>Настоящий городок</li>
-          <li>Там есть мост дьявола</li>
-          <li>Небольшая площадь</li>
-          <li>Красивая дорога</li>
-          <li>Мало туристов</li>
-          <li>
+          <li class="advantages-item">
+            <div class"item-w-image">
+              <h2 class="item-title">Настоящий городок</h2>
+              <p class="item-number">№1</p>
+              <p class="item-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
+            <div class="item-image">
+              <img src="img/adv.1.jpg" width="800" height="256" alt="Настоящий город">
+            </div>
+          </li>
+          <li class="advantages-item">
+            <div class"item-w-image">
+              <h2 class="item-title">Там есть мост дьявола</h2>
+              <p class="item-number">№2</p>
+              <p class="item-description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
+            <div class="item-image">
+              <img src="img/adv.2.jpg" width="800" height="256" alt="Мост дьявола">
+            </div>
+          </li>
+          <li class="advantages-item">
+            <h2 class="item-title">Небольшая площадь</h2>
+            <p class="item-number">№3</p>
+            <p class="item-description">Все достопримечательности находятся очень близко</p>
+          </li>
+          <li class="advantages-item">
+            <h2 class="item-title">Красивая дорога</h2>
+            <p class="item-number">№4</p>
+            <p class="item-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="advantages-item">
+            <h2 class="item-title">Мало туристов</h2>
+            <p class="item-number">№5</p>
+            <p class="item-description">Большинство едет в гранд каньон и толпится там</p>
+          </li>
+          <li class="advantages-item">
             <ul class="more-advantages">
-              <li>Жильё</li>
-              <li>Еда</li>
-              <li>Сувениры</li>
+              <li class="more-advantages-item">
+                <h2 class="more-adv-title">Жильё</h2>
+                <p class="more-adv-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              </li>
+              <li class="more-advantages-item">
+                <h2 class="more-adv-title">Еда</h2>
+                <p class="more-adv-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </li>
+              <li class="more-advantages-item">
+                <h2 class="more-adv-title">Сувениры</h2>
+                <p class="more-adv-text">Не только китайского, но и местного производства!</p>
+              </li>
             </ul>
           </li>
         </ul>
       </section>
       <section class="hotel-search">
-        <b>Заинтересовались?</b>
-        <h3>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</h3>
+        <b class="search-title">Заинтересовались?</b>
+        <p class="search-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</h3>
         <a class="popup-trigger" href="#">Поиск гостиницы в Седоне</a>
-        
         <div class="popup-body">
           <form class="search-form">
             <p class="search-item">
               <label for="arrival-date">Дата заезда</label>
               <input id="arrival-date" type="date" name="date" value="" placeholder="24 апреля 2017">
-              <a class="calendar" href="#"></a>
             </p>
             <p class="search-item">
               <label for="departure-date">Дата выезда</label>
               <input id="departure-date" type="date" name="date" value="" placeholder="4 июля 2017">
-              <a class="calendar" href="#"></a>
             </p>
-            <!-- div.Общий родитель для детей и взрослых что бы легче работать с флексом -->
-              <p class="search-item">
-                <label for="guests-adults">Взрослые</label>
+            <div class="visitors">
+            <p class="search-item">
+              <label for="guests-adults">Взрослые</label>
+              <div class="input-wrapper">
                 <button type="button">-</button>
-                <input id="guests-adults" type="number" name="people" min="1" value="2">
+                <input id="guests-adults" type="number" name="people" min="1" value="">
                 <button type="button">+</button>
-              </p>
-              <p class="search-item">
-                <label for="guests-kids">Дети</label>
+              </div>
+            </p>
+            <p class="search-item">
+              <label for="guests-kids">Дети</label>
+              <div class="input-wrapper">
                 <button type="button">-</button>
-                <input id="guests-kids" type="number" name="people" min="0" value="0">
+                <input id="guests-kids" type="number" name="people" min="0" value="">
                 <button type="button">+</button>
-              </p>
-            <!-- конец этого diva -->
+              </div>
+            </p>
+          </div>
             <button class="search-button" type="submit">Найти</button>
           </form>
         </div>
@@ -88,7 +130,7 @@
     </main>
 
     <footer class="main-footer">
-      <p class="footer-contacts">
+      <p class="search-tag">
         <b>#visitsedona</b>
       </p>
       <ul class="footer-social">
@@ -110,9 +152,10 @@
       </ul>
       <p class="footer-copyright">
         <b>Website by:</b> <a class="button" href="https://htmlacademy.ru">
-          <img src="img/logo-htmlacademy.svg" width="100" height="70" alt="">HTML Academy</a>
+          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy"></a>
       </p>
     </footer>
-    <!-- div.нашОбщийЦентровщикЗакрывается -->
-  </body>
+    <div>
+</body>
+
 </html>
