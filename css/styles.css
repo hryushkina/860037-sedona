@@ -105,17 +105,17 @@ a {
   color: #000000;
 }
 
-.search-item .input {
+.search-item input {
   font: inherit;
 
   background-color: #f2f2f2;
 }
 
-.search-item .input:hover {
+.search-item input:hover {
   background-color: #ebebeb;
 }
 
-.search-item .input:focus {
+.search-item input:focus {
   background-color: #ffffff;
   border-color: #ebebeb;
 }
