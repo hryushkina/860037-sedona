@@ -12,6 +12,8 @@ body {
   background-image: url("img/background.jpg");
   background-position: top center;
   background-repeat: no-repeat;
+  
+  /* зачем для боди что-то про фоновое изображение? оно у нас в твоей секции background *.
 }
 
 a {
@@ -235,7 +237,7 @@ a {
 /* ------ Сеточные стили ------*/
 /* кусок сделан */
 
-.wrapper/*+++++++ наш новый центровщик. PS - у него будет тень слева справа +++++++ */ {
+.wrapper
   width: 1200px;
   margin: 0 auto;
 }
@@ -249,15 +251,20 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  
+  /* он должен быть обычным блочным. понял, что ты не знала как логотип прицепить. по этому сделала так. На самом деле как сделать логотип
+  по центру будет на лекции про позиционированни. пока убери просто отсюда все эти флекс свойства */
 }
 
 .site-navigation {
   width: 100%;
   margin: 0;
+  /* слева и справа паддинги */
   padding: 0;
 
   list-style: none;
   display: flex;
+  /* без маргина*/
   margin-top: -70px;
 }
 
@@ -267,6 +274,8 @@ a {
 }
 
 .site-navigation a {
+  /* текущие падинги выползают за саму гавигациию. Но суть в том, что вообще у ссылки не должно быть паддингом. кликабельная зона только текст.
+  а паддинги - у ли , в котором они лежат */
   padding: 20px 70px;
 
   display: block;
@@ -283,9 +292,12 @@ background-repeat: no-repeat;
 padding-top: 75px;
 padding-bottom: 80px;
 margin-top: -17px;
+  /* че-то с форматированием, миносовой маргин не нужен. Задай фикс высоту этой секции и картинку выравнивай по центру с помощью флекс
+  свойств align-items:center, justify-content:center; */
 }
 
 .bcg-img {
+  /* ужасное название класса */
   display: block;
   margin: auto;
 }
@@ -309,17 +321,13 @@ margin-top: -17px;
   left: 0;
   right: 0;
   top: 100%;
+  /* паддинг для самой формы дай */
   padding: 55px;
   background-color: #ffffff;
+  /* Он и так блочный, зачем ему флекс свойство)? */
   display: block;
   justify-content: space-around;
 }
-
-/* .search-form {
-  width: 570px;
-}
-*/
-
 .visitors {
   display: flex;
   flex-wrap: wrap;
@@ -353,6 +361,8 @@ margin-top: -17px;
 /* --- и с формой какой-то бред получается. не пойму откуда и до куда мерять расстояния ---*/
 
 /* кусок сделан */
+
+/* search-item Должен быть флекс, visitors - флекс, взрослые и дети тоже лейблы, они занимаются по 50% от родителя visitots, кнопку вынеси за этот блок */
 
 .main-footer {
   height: 120px;
