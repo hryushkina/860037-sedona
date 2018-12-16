@@ -45,7 +45,7 @@ a {
   color: #766357;
 }
 
-.features h2 {
+.title {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -53,7 +53,7 @@ a {
   text-align: center;
 }
 
-.features h3 {
+.subtitle {
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
@@ -69,7 +69,7 @@ a {
   text-align: center;
 }
 
-.hotel-search h3 {
+.hotel-search p {
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
@@ -105,17 +105,17 @@ a {
   color: #000000;
 }
 
-.input {
+.search-item .input {
   font: inherit;
 
   background-color: #f2f2f2;
 }
 
-.input:hover {
+.search-item .input:hover {
   background-color: #ebebeb;
 }
 
-.input:focus {
+.search-item .input:focus {
   background-color: #ffffff;
   border-color: #ebebeb;
 }
@@ -140,8 +140,7 @@ a {
 }
 
 .search-button:click,
-.social-button:hover,
-.social-button:focus {
+.social-button:click {
   background-color: #5496bd;
 }
 
@@ -221,30 +220,17 @@ a {
   text-align: center;
 }
 
-.social-button {
-  background-color: #81b3d2;
-}
-
 .footer-copyright a:hover,
 .footer-copyright a:focus {
   background-color: #81b3d2;
 }
 
 /* ------ Сеточные стили ------*/
-/*+++++++ Это лишнее, убери, хоть в лекции и показывали так+++++++ */
-html,
-body {
-  min-width: 1280px;
-  min-height: 2762px;
-}
+/* кусок сделан */
 
-./*+++++++ наш новый центровщик. PS - у него будет тень слева справа +++++++ */ {
+.wrapper/*+++++++ наш новый центровщик. PS - у него будет тень слева справа +++++++ */ {
   width: 1200px;
   margin: 0 auto;
-}
-
-.main-header {
-  margin-bottom: 22px;
 }
 
 .main-header-logo {
@@ -252,42 +238,80 @@ body {
   height: 72px;
 }
 
+.main-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .site-navigation {
-  /* {flex, его дети распологаются слева направо, 3ий отталкивается от 2ого маргин лефт ауто}  */
-  /* flex и так занимается 100% родителя, родитель тянется на весь центровщик, т.е. дублировать ширину незачем */
-  width: 1200px;
+  width: 100%;
   margin: 0;
   padding: 0;
 
   list-style: none;
+  display: flex;
+  margin-top: -70px;
 }
 
-/* форматирование! ширина не нужна, элайн айтемс просто так не сработает без свойства дисплей:флекс*/
+.main-header-logo {
+  position: relative;
+  z-index: 1;
+}
+
+.site-navigation a {
+  padding: 20px 70px;
+
+  display: block;
+}
+
+.site-navigation-item:nth-child(2) {
+  margin-right: auto;
+}
+
 .background{
-width: 1200px;
-margin-bottom: 65px;
-align-items: center;
+background-image: url("../img/background.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+padding-top: 75px;
+padding-bottom: 80px;
+margin-top: -17px;
 }
 
-.features h2 {
-  width: auto;
-  margin-left: 282px;
-  margin-right: 282px;
-  margin-bottom: 30px;
-  padding: 0;
-  align-items: center;
+.bcg-img {
+  display: block;
+  margin: auto;
 }
 
-.features h3 {
-  width: auto;
-  margin-left: 354px;
-  margin-right: 354px;
-  margin-bottom: 56px;
-  padding: 0;
-  align-items: center;
+.search-body {
+  width: 570px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
-.advantages {
+.popup-trigger {
+  display: block;
+  padding: 30px;
+}
+
+.popup-body {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  padding: 55px;
+  background-color: #ffffff;
+}
+
+.map {
+  height: 472px;
+}
+
+
+ /* .advantages {
   width: auto;
   margin-bottom: 58px;
   padding: 0;
@@ -304,35 +328,42 @@ align-items: center;
 
 .hotel-search b {
   text-align: center;
-}
+} */
 
-.popup-trigger {
-  width: auto;
-  margin-left: 455px;
-  margin-right: 455px;
-  margin-bottom: 33px;
-  padding: 0;
-  align-items: center;
-}
 
 /* --- и с формой какой-то бред получается. не пойму откуда и до куда мерять расстояния ---*/
 
-.main-footer .container {
-  display: flex;
-}
+/* кусок сделан */
 
-.footer-contacts {
- width: 240px;
- margin-left: 73px;
- margin-right: 88px;
+.main-footer {
+  height: 120px;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .footer-social {
-  width: 400px;
+  list-style: none;
+  display: flex;
+}
+
+.social-button {
+  width: 47px;
+  height: 47px;
+  margin: 4px;
+
+  background-color: #81b3d2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-copyright {
-  width: 240px;
-  margin-left: 88px;
-  margin-right: 73px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-copyright .button {
+  margin-left: 10px;
 }
